@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script > 
+function set(){
+    document.getElementById("heading").innerText = localStorage.getItem("obj")  ;
+    document.getElementById("hw").innerText = localStorage.getItem("total")  ;
+    if( document.getElementById("rec").className == "block"){     document.getElementById("rec").className = "hidden";}
+
+    if( document.getElementById("main").className == "hidden"){     document.getElementById("main").className = "block";}
+}
+
+    </script>
+
+    <style>
+    .ok{ background: rgb(252, 115, 4);   }
+    .ll{  background: rgb(255, 230, 0);  border:  solid rebeccapurple;     }
+    .hidden{ display: none;  }
+
+    </style>
+
+</head>
+<body>
+    <h1  align="center" class="ll" > Your receipt    </h1>
+    <h1 id="heading" class="ok" >  press button to get you receipt  </h1>
+
+    <h1 id="hw" class="ll" >   </h1>
+    <button onclick="set()" id="rec" class="block">  Click for receipt  </button>
+    <div id="main" class="hidden" >  <h1>thank you for shopping </h1> <button style="background: rgb(255, 230, 5); color: rgb(255, 115, 0);"> <a href="./ecommerce1.html">  Continue shopping </a>  </button>   </div>
+    
+</body>
+</html>

@@ -1,0 +1,156 @@
+<html>
+
+<title>Sign Up</title>
+
+<head>
+
+    <link rel="stylesheet" href="maazsign1.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD3toBaRG2VzLu3idDGBgncdlMQpcKucBQ",
+    authDomain: "project-uit.firebaseapp.com",
+    databaseURL: "https://project-uit.firebaseio.com",
+    projectId: "project-uit",
+    storageBucket: "project-uit.appspot.com",
+    messagingSenderId: "183119464386",
+    appId: "1:183119464386:web:d8c8bfe5b5ed9e0779785b"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+
+    <div class="s1">
+
+<h1><span class="s1a">SIGN</span>UP</h1>
+<form  id="cf"> 
+
+
+<input  id="sname" type="text" name="username" placeholder="Username" onFocus="this.style.backgroundColor='rgb(204, 230, 255)';" onblur="this.style.backgroundColor='rgba(242, 242, 242,0.9);'">
+<input  id="smail" type="email" name="email" placeholder="Email" onFocus="this.style.backgroundColor='rgb(204, 230, 255)';" onblur="this.style.backgroundColor='rgba(242, 242, 242,0.9);'">
+<input  id="scell" type="text" name="cellnumber" placeholder="Cellnumber" onFocus="this.style.backgroundColor='rgb(204, 230, 255)';" onblur="this.style.backgroundColor='rgba(242, 242, 242,0.9);'">
+
+
+<input  id="spass" type="password" name="password" placeholder="Password"  onFocus="this.style.backgroundColor='rgb(204, 230, 255)';" onblur="this.style.backgroundColor='rgba(242, 242, 242,0.9);'">
+<input  id="spass2" type="password" name="password" placeholder="Confirm Password"  onFocus="this.style.backgroundColor='rgb(204, 230, 255)';" onblur="this.style.backgroundColor='rgba(242, 242, 242,0.9);'">
+
+<button type="submit">SUBMIT</button>
+
+<p>Already<a href="maazhome.html"> Registered</a></p>
+</form>
+        
+    </div>
+    <div id="err"> 
+        <p>something went wrong</p>
+
+    </div>
+
+
+</body> 
+
+<script>
+
+document.getElementById('cf').addEventListener('submit',function (evt)
+{
+evt.preventDefault();
+
+
+    var nameref= document.getElementById("sname").value;
+var mailref= document.getElementById("smail").value;
+var cellref= document.getElementById("scell").value;
+var passref= document.getElementById("spass").value;
+var pass2ref= document.getElementById("spass2").value; 
+    var error=document.getElementById("err");
+
+var user={ 
+        username:nameref,
+        mail:mailref,
+        pass:passref,
+        cellno:cellref,
+        pass:passref,
+        confirmpass:pass2ref
+    }
+
+    firebase.database().ref('users/' + user.username).set({
+    username: user.username,
+    email: user.mail,
+    no:user.cellno,
+    pass:user.pass
+  });
+
+
+console.log("OK")
+
+    var truth = valid(user);
+    if(truth)
+    {
+        firebase.auth().createUserWithEmailAndPassword(user.mail,user.pass)
+     .then(function(sucess)
+    
+     {
+        console.log("sucess",sucess)
+    })//then
+
+       .catch(function(error)
+    {
+        console.log("error",error)
+        
+
+    })//catch
+    }//if
+
+    else{
+        error.style.display="block";
+        
+setTimeout(()=>
+{
+    error.style.display="none";
+},3000)
+
+    }//else
+
+
+})
+
+
+function valid(_user)
+{
+var valid=true;
+
+for(var access in _user)
+{
+    if(_user[access] === '' || _user[access] === undefined)
+    {
+      valid = false;
+    }
+
+    if(_user.pass !== _user.confirmpass)
+    {
+        valid=false;
+    }
+
+    return valid;
+
+
+}//for loop
+
+}//function valid user
+
+
+
+
+
+
+
+</script>
+
+</html>

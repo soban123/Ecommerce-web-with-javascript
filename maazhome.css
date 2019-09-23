@@ -1,0 +1,983 @@
+body
+{
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(5, 29, 74, 0.7),rgba(5, 29, 75, 0.7)),url("images/mainpage1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+
+}
+h1
+{
+    font-family: 'Dawning of a New Day';
+
+}
+
+
+.nav1 
+
+{
+   position: absolute;
+   top: 4%;
+   left: 50%;
+   transform:translate(30%,-20%);
+}
+
+.nav1 ul
+{
+   list-style-type: none;
+   padding:30px;
+   
+    
+}
+
+.nav1 ul li{
+   list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+    color:white;  
+    font-family: Raleway;
+   letter-spacing: 0.01em;
+    border-radius: 50px;
+    font-size:15px;
+}
+.nav1 a
+{
+    text-decoration: none;
+color: white;
+font-size: 14px;
+
+
+}
+
+.active
+{
+    background-color: tomato;
+    
+}
+
+.active:hover
+{
+  background-color:rgba(242, 242, 242,0.5);
+
+}
+.nav1 li:hover{
+    background-color: rgba(242, 242, 242,0.5);;
+    transition: 0.8s;
+    color:tomato;
+    
+}
+
+
+.header
+{
+    font-family: Bad script;
+   letter-spacing: 0.01em;
+    font-size: 70px;
+    position: absolute;
+    top: 40%;
+    position:absolute;
+    left: 35%;
+    color: white;
+
+  }
+/*heading*/
+
+.header1a
+{
+    color: tomato;
+}
+
+
+
+
+#contc
+{
+    text-align: center;
+    font-family: Raleway ;
+    color: #111;
+    position: relative;
+    top: 740px;
+    letter-spacing: 0.12em;
+    font-size: 36px;
+
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 800px;
+    left: 40%;
+    width: 250px;
+    height: 400px;
+    perspective: 900px;
+  }/*WHOLE BOX*/
+  
+  .container {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transition: .5s all ease;
+    transform: rotateX(60deg) scale(0.7);
+    perspective: 900px;
+    box-shadow: 0px 20px 50px #555;
+    animation: entry 1s linear 1;
+  }/*left and right box*/
+  
+
+  
+  #c1 {
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    left: 60%;
+    z-index: 0;
+    background-image: linear-gradient(rgba(5,29,75,0.3),rgba(5,29,75,0.3)),url("images/doctor.jpg");
+    background-position:cover;
+   background-repeat: no-repeat;
+   background-size: 100% 50%;
+  
+  }/*STYLING OF INDIVIDUAL BOX*/
+  
+  #c2 {
+    left: -60%;
+    z-index: 0;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    background-image: linear-gradient(rgba(5,29,75,0.3),rgba(5,29,75,0.3)),url("images/patient.jpg");
+    background-position:cover;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+  
+  }/*STYLING OF EMPLOYEE BOX*/
+  
+  .container:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+  }
+  
+  
+  
+  
+  
+  
+  
+  #i1 {
+    background: linear-gradient(to bottom, #59476f 100%, #7b88d1 100%);
+    background-image: url("images/sign.png");
+    background-position:cover;
+    background-size: 100% 100%;
+  }/*UPPER IMAGE*/
+  
+  #i2 {
+    background: linear-gradient(to bottom, #59476f 100%, #7b88d1 100%);
+    background-image: url("images/sign.png");
+    background-position:cover;
+    background-size: 100% 100%;
+  }/*UPPER IMAGE*/
+  
+  
+  .story {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    height: 55%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(255, 77, 77) 0%, rgb(255, 77, 77) 40%);
+    z-index: 30;
+    font-family: Raleway;
+  }/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+  
+  #s1 {
+    background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+  }/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+  
+  #s2 {
+    background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+  }/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+  
+  .info {
+    position: absolute;
+    top: 0%;
+  }/*STYLING PAra is written*/
+  
+  h3 {
+    text-align: center;
+    text-shadow: 0px 0px 10px #eee;
+    color: #eee;
+    letter-spacing:0.1em;
+    font-size: 25px;
+    font-family: Raleway;
+    text-transform: uppercase;
+  
+  }/*HEADING STYLING  I.E PYRAMID*/
+  
+  
+  
+  
+  
+  
+  p {
+    font-size: 13px;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1px;
+  }/*STYLING OF PARAGRAPH WRITTEN*/
+  
+  
+  @keyframes simple {
+    50% {
+      transform: translateX(10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes simple1 {
+    50% {
+      transform: translateX(-10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes entry {
+    0% {
+      top: -20%;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+
+
+ /* #ceopass
+{
+    border: none;
+    border-bottom: 3px solid  white;
+    outline: none;
+    height: 5px;
+    background-color:rgba(242, 242, 242,0.9);
+    color: black;
+    font-size: 16px;
+    position: relative;
+    left: 13px;
+    font-family:Raleway;
+    width: 220px;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+#ceopass:hover
+{
+    border: none;
+    outline: none;
+    height: 37px;
+    background-color:rgba(242, 242, 242,0.9);
+    border-bottom: 3.5px solid rgb(204, 0, 0);
+    color: black;
+}
+
+#s0 input[type="button"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(255, 26, 26);
+    color: snow;
+    height: 38px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family:Raleway;
+    position: relative;
+    top: 74px;
+    width: 170px;
+    position: relative;
+    left: 38px;
+    padding: 2px;
+    
+   }
+
+   #s0 input[type="button"]:hover
+  {
+      cursor: pointer;
+      background-color:rgb(255, 153, 153);
+      color: white;
+    
+  }
+
+STYLING OF MIDDLE BOX FORM */
+
+
+
+#s2 input[type="email"],input[type="password"]
+{
+    border: none;
+    border-bottom: 3px solid  white;
+    outline: none;
+    height: 13px;
+    background-color:rgba(242, 242, 242,0.9);
+    color: black;
+    font-size: 16px;
+    position: relative;
+    left: 13px;
+    font-family:Raleway;
+    font-weight: lighter;
+    width: 220px;
+    border-radius: 15px;
+    position: relative;
+    top: 0px;
+    padding-left: 20px;
+}
+
+#s2 input[type="email"],input[type="password"]:hover
+{
+    border: none;
+    outline: none;
+    height: 37px;
+    background-color:rgba(242, 242, 242,0.9);
+    border-bottom: 3.5px solid rgb(0, 45, 179);
+    color: black;
+}
+
+#s2 input[type="button"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(0, 102, 204);
+    color: snow;
+    height: 38px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family:Raleway;
+    position: relative;
+    top: 21px;
+    width: 170px;
+    position: relative;
+    left: 38px;
+    padding: 2px;
+    
+   }
+
+   #s2 input[type="button"]:hover
+  {
+      cursor: pointer;
+      background-color:rgb(128, 159, 255);
+      color: white;
+    
+  }
+.header3
+{
+  position: relative;
+   top: 1400;
+  }
+
+/*STYLING OF EMPLOYEE BOX*/
+
+
+
+#s1 input[type="email"],input[type="password"]
+{
+    border: none;
+    border-bottom: 3px solid  white;
+    outline: none;
+    height: 4px;
+    background-color:rgba(242, 242, 242,0.9);
+    color: black;
+    font-size: 16px;
+    position: relative;
+    left: 13px;
+    font-family:Raleway;
+    width: 220px;
+    border-radius: 15px;
+    position: relative;
+    top: 2px;
+    padding: 20px;
+    
+}
+
+#s1 input[type="email"],input[type="password"]:hover
+{
+    border: none;
+    outline: none;
+    height: 37px;
+    background-color:rgba(242, 242, 242,0.9);
+    border-bottom: 3.5px solid rgb(0, 45, 179);
+    color: black;
+}
+
+#s1 input[type="button"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(0, 102, 204);
+    color: snow;
+    height: 38px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family:Raleway;
+    position: relative;
+    top: 21px;
+    width: 170px;
+    position: relative;
+    left: 38px;
+    padding: 2px;
+    
+   }
+
+   #s1 input[type="button"]:hover
+  {
+      cursor: pointer;
+      background-color:rgb(128, 159, 255);
+      color: white;
+    
+  }
+
+
+
+  
+.d3
+{
+  background-color:white;
+  height:500px;
+  width:100%;
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.d3 h1
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Raleway;
+  color: rgba(0,0,0,0.7);
+  
+
+}
+
+
+
+
+.img1{
+
+  background-image: url("images/homeicon4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 65px 65px;
+  background-color: white;
+  width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 40%;
+   left: 18%;
+   transform: translate(-50%,-40%);
+   
+
+}
+
+
+.head1{
+
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-185%,2%);
+  
+}
+.head1 h1
+{
+  font-size: 18px;
+  font-family:koho;
+  font-weight: bolder;
+  color: rgba(0,0,0,0.7);
+  
+  }
+
+   
+.head1 p
+{
+    font-size: 14px;
+   font-family: Raleway;
+    color: black;
+    text-align: center;
+}
+/*FIRST LOGO*/
+
+.img2{
+
+  background-image: url("images/homeicon2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 65px 65px;
+  background-color: white;
+  width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 40%;
+   left: 39%;
+   transform: translate(-50%,-40%);
+   
+
+}
+
+.head2{
+
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  transform: translate(-50%,2%);
+  
+}
+.head2 h1
+{
+
+font-size: 18px;
+font-family:koho;
+font-weight: bolder;
+color: rgba(0,0,0,0.7);
+
+}
+
+.head2 p
+{
+    font-size: 14px;
+   font-family: Raleway;
+    color: rgba(0,0,0,0.7);
+    text-align: center;
+}
+/*LOGO 2*/
+
+
+.img3{
+
+  background-image: url("images/homeicon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 65px 65px;
+  background-color: white;
+  width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 40%;
+   left: 62%;
+   transform: translate(-50%,-40%);
+   
+
+}
+
+.head3{
+
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%,2%);
+  
+}
+.head3 h1
+{
+
+  font-size: 18px;
+  font-family:koho;
+  font-weight: bolder;
+  color: rgba(0,0,0,0.7);
+  
+  
+}
+
+.head3 p
+{
+    font-size: 14px;
+   font-family: Raleway;
+    color: black;
+    text-align: center;
+}
+/*LOGO 3*/
+
+
+.img4{
+
+  background-image: url("images/homeicon3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 65px 65px;
+  background-color: white;
+  width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 40%;
+   left: 82%;
+   transform: translate(-50%,-40%);
+   
+
+}
+
+.head4{
+
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 82%;
+  transform: translate(-50%,2%);
+  
+}
+.head4 h1
+{
+
+  font-size: 18px;
+  font-family:koho;
+  font-weight: bolder;
+  color: rgba(0,0,0,0.7);
+  
+  }
+
+
+.head4 p
+{
+    font-size: 14px;
+   font-family: Raleway;
+    color: black;
+    text-align: center;
+}
+/*LOGO 4*/
+
+
+
+
+
+
+
+.achievement
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Raleway;
+  color: rgba(0,0,0,0.7);
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  top: 1780px;
+  
+  
+}
+
+
+
+/*LOGOS OF 'what we value most */
+.div4
+{
+  background-color:rgb(45, 89, 134);
+  height:500px;
+  width:100%;
+  position: absolute;
+  top: 350%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.stick
+{
+  height: 360px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+ border-radius: 1px;
+transition:1s;
+background-image: linear-gradient(rgba(0,0,0, 0.2),rgba(5, 29, 75, 0.5)),url("images/stick.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.stick:hover
+{
+ z-index: 30;
+ width: 450px;
+ height: 400px;
+box-shadow: 0 25px 60px rgba(5, 29, 75, 0.7);
+
+
+}
+
+.stick:hover ~ .div4
+{
+  filter: blur(10px);
+
+}
+.stick h1
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Raleway;
+  color: white;
+  font-weight: lighter;
+
+}
+
+.stick p
+{
+  color: white;
+  font-family: Raleway;
+  text-align: center;
+  font-size: 14px;
+position: relative;
+top: 270px;
+}
+
+
+.stick2
+{
+  height: 360px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+ border-radius: 1px;
+transition:1s;
+background-image: linear-gradient(rgba(0,0,0, 0.2),rgba(0,0,0, 0.5)),url("images/stick2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.stick2:hover
+{
+ z-index: 30;
+ width: 450px;
+ height: 400px;
+box-shadow: 0 25px 60px rgba(5, 29, 75, 0.7);
+
+}
+
+
+.stick2 h1
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Raleway;
+  color: white;
+  font-weight: lighter;
+
+
+}
+
+.stick2 p
+{
+  color: white;
+  font-family: Raleway;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+top: 270px;
+}
+
+/*DIV THAT CONTAINS 2 BOXES */
+
+
+
+
+
+
+
+
+
+.aboutus 
+{
+  position: relative;
+  top: 2650px;  
+  left:50%;
+
+  transform: translate(-51%,-50%);
+  width: 1375px;
+  height: 440px;
+   
+ background-color:white;
+  
+ 
+  
+
+}
+
+/* Start of about us styling */
+
+.aboutus h6
+{
+  text-align: center;
+  color: rgba(0,0,0,0.7);
+  font-family: Raleway;
+  font-size: 45px;
+  
+  padding: 10px;
+  
+}
+
+.aboutus p
+{
+  color:black;
+  font-family:Bad script;
+  font-weight: bolder;
+  position: relative;
+  top: 230px;
+  
+  padding: 8px;
+  background-color: #eee;
+  border:2px solid rgb(128, 128, 255);
+}
+
+.member1
+{
+  height: 280px;
+  width: 200px;
+  background-color:white;
+  background-image: url("images/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+   top: 44%;
+   left: 18%;
+   transform: translate(-50%,-25%);
+   border:1px solid rgb(128, 128, 255);
+}
+
+.member2
+{
+  height: 280px;
+  width: 200px;
+  background-color:white;
+  background-image: url("images/m5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border:1px solid rgb(128, 128, 255);
+  position: absolute;
+   top: 44%;
+   left: 35%;
+   transform: translate(-50%,-25%);
+}
+
+.member3
+{
+  height: 280px;
+  width: 200px;
+  background-color:white;
+  
+  background-image: url("images/yasir2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border:1px solid rgb(128, 128, 255);
+  position: absolute;
+   top: 44%;
+   left: 65%;
+   transform: translate(-50%,-25%);
+}
+
+
+/* End of about us styling */
+
+
+/* Start of styling of footer */
+
+.foot
+{
+  height: 300px;
+  width: 100%;
+  background-color:rgb(38, 38, 38);
+  position: absolute;
+   top: 200%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+
+
+.nav3
+{
+display: flex;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-55%,-50%);
+border-radius: 100px solid white;
+
+}
+
+
+.nav3 li
+{
+background-color: rgb(38, 38, 38);
+margin: 10px;
+list-style: none;
+font-size: 36px;
+transition: 0.5s;
+
+}
+
+.nav3 span
+{
+  font-size: 14px;
+  color: white;
+  font-family: Raleway;
+
+}
+
+.nav3 li a
+{ 
+    width: 80px;
+    padding: 14px 0.2px;
+    display: block;
+    color: white; 
+    
+}
+.nav3 li:hover
+{
+    
+    background-color: rgba(0,0,0,0.5);
+}
+
+.uh
+{
+  
+ position: absolute;
+ top: 50%;
+ left:65%;
+ transform: translate(80%,50%);
+}
+.uh h2{
+  color: whitesmoke;
+  font-size: 12.5px;
+  font-family: Raleway;
+  
+  
+
+}
+.uh a{
+
+
+     outline: none;
+     text-decoration:none;
+  
+
+}
+
+/* End of about us styling */

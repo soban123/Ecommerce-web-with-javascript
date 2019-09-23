@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase.js"></script>
+
+<script>    var Config = {
+      apiKey: "AIzaSyD3toBaRG2VzLu3idDGBgncdlMQpcKucBQ",
+      authDomain: "project-uit.firebaseapp.com",
+      databaseURL: "https://project-uit.firebaseio.com",
+      projectId: "project-uit",
+      storageBucket: "project-uit.appspot.com",
+      messagingSenderId: "183119464386",
+      appId: "1:183119464386:web:d8c8bfe5b5ed9e0779785b"
+    };
+    // Initialize Firebase
+      firebase.initializeApp(Config);
+
+    </script>
+
+
+
+  </head>
+<body>
+    <div class="hh">
+        <div>
+            <h1>  
+               Sign In
+            </h1>
+        
+        
+        </div>
+        
+        <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+
+                </div>
+                <button onclick="signin()" id="ok"  class="btn btn-primary" > <a  style="color: aliceblue"> Sign in </button>
+                <button onclick="signout()" class="btn btn-primary" > <a  style="color: aliceblue"> Forget password </button>
+
+
+       1     </form>
+              </div>
+
+
+              <script>
+              
+
+                 
+function signin(){
+                   
+
+  let email = document.getElementById("email").value ;
+            let password = document.getElementById("password").value ;
+
+
+              firebase.auth().CreateWithEmailAndPassword(email, password)
+              .then(  )
+                    
+                     
+             
+             
+             
+                    } 
+                        
+
+                        var provider = new firebase.auth.GoogleAuthProvider();
+                    firebase.auth().signInWithPopup(provider);
+
+//                     var provider = new firebase.auth.FacebookAuthProvider()
+
+//                     firebase.auth().signInWithRedirect(provider).then(function(result) {
+//   // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+//   var token = result.credential.accessToken;
+//   // The signed-in user info.
+//   var user = result.user;
+//   // ...
+// }).catch(function(error) {
+//   // Handle Errors here.
+//   var errorCode = error.code;
+//   var errorMessage = error.message;
+//   // The email of the user's account used.
+//   var email = error.email;
+//   // The firebase.auth.AuthCredential type that was used.
+//   var credential = error.credential;
+//   // ...
+// });
+
+
+function signout(){
+firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});
+
+}
+
+
+              </script>
+
+
+</body>
+</html>

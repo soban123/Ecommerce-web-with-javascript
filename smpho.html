@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+              <script src="./checkout.js"> </script>
+    <style> 
+    .div1:hover{ background: rgb(48, 47, 43);   }
+    .block{ display: block; background: #000; width: 200px ; color: chartreuse; shape-margin: 20px; }
+    .hidden{ display: none;   }
+    .cor{  width: 250px ;  height: 290px;  }
+    .box{ display: flex ; flex-wrap: wrap; margin: 2px ; background-image: linear-gradient(to right , white , rgb(255, 149, 10) ); }
+    .box > div {  margin : 30px; padding: 20px; border: solid rgb(5, 5, 5) 2px; background: #000 ; color: wheat; }
+    button{ margin: 5px; color: blanchedalmond;  background-image: linear-gradient( to right , rgb(255, 145, 2) , rgb(36, 30, 30) ); border-radius: 10px;  }
+    </style>
+</head>
+<body>
+    
+<div>
+
+    <h1 align="center"   style="font-family: 'Righteous', cursive;  background: #000; color: rgb(255, 81, 13); "  >     WELCOME TO SMARTPHONE WORLD   </h1>
+
+    
+
+<div style="margin-left:1400px; border: 2px solid rebeccapurple; " class="cor" >  <p id="cart" style="color: tomato; border:black 2px solid ; border-radius: 50px  ;  font-family:'Times New Roman', Times, serif; font-size: 30px" align="center"> items  </p>  <img src="./pics/eco.png" alt="" width="120px" height="100px" >   <button style="height:50px; "  onclick="checkout()" > Check out  </button >  <h1>Cart  </h1>  </div>
+    <div class="box" style=" width: 100% ; border: black solid 2px"   >  
+    
+ <div class="div1" onmouseover="show()" ; onmouseout="hide()" ; > <img src="./pics/htc.jpg" id="phone"  width="200px" height="255px" alt="phone"> <h4>Htc h1</h4> <div id= "ok" class="hidden" style="font-size: 40px ; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> price is 390$ </div>   <button class="bu" onclick="addtocart( 'htc1' , 390 )">Add to cart</button>   </div>
+<div onmouseover="show1()" ; onmouseout="hide1()" ; > <img src="./pics/s11.webp" alt="tv" width="260px" height="255px"> <h4> samsung s11 </h4> <div class="hidden" id="ok1" style="font-size: 40px ;">  price is 700$   </div>  <button class="bu" onclick="addtocart( ' samsung s11 ' , 700  )">Add to cart</button> </div> 
+<div  onmouseover="show2()" ; onmouseout="hide2()"> <img src="./pics/realme.jpg" alt="tv" width="250px" height="255px"> <h4>real me j-23</h4> <div class="hidden" id="ok2" style="font-size: 40px ;">  price is 1700$   </div>  <button class="bu"   onclick="addtocart(  ' realme j-23 '  , 1700  )">Add to cart</button> </div>
+<div  onmouseover="show3()" ; onmouseout="hide3()"> <img src="./pics/oppo.jpg" alt="tv" width="270px" height="255px"> <h4> oppo 09</h4> <div class="hidden" id="ok3" style="font-size: 40px ;">  price is 900$   </div>   <button class="bu" onclick="addtocart( 'oppo 09' , 900  )">Add to cart</button> </div>
+
+    
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+
+</html>

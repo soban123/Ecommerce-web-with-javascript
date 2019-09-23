@@ -1,0 +1,132 @@
+body{
+
+    background-color: rgb(242, 242, 242);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0 ,0 ,0.2)),url("images/sign.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    
+    background-size: cover;
+}
+
+
+.s1{
+
+    height: 500px;
+    width: 340px;
+    background-color:rgb(242, 242, 242);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.8;
+    padding: 50px 20px;
+   border-radius: 20px; 
+}
+.s1 h1
+{
+    
+    color:rgb(153, 179, 255);
+    Font-Family:Ubuntu;
+    font-size: 35px;
+    letter-spacing: 0.01em;
+    font-weight: lighter;
+    text-align: center;
+    margin: -7;
+    padding: 0 0 40px;
+}
+
+.s1a
+{
+    color:rgb(0, 64, 255);
+    font-size: 36px;
+
+}
+
+
+
+
+.s1 input{
+
+      width: 100%;
+      color: black;
+      margin-bottom: 40px;
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: lighter;
+      
+  
+}
+
+.s1 input[type="text"],input[type="password"],input[type="email"]
+{
+    border:none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid  white;
+    height: 40px;
+
+}
+
+.s1 input[type="text"],input[type="password"],input[type="email"]:hover
+{
+    transition:0.25s;
+    border-bottom: 2px solid #0a0c0c;
+
+}
+
+.s1 button
+{
+    border: none;
+    outline: none;
+    font-family:Rubik;   
+    height: 40px;
+    width: 290px;
+    border-radius: 22px;
+    background-color: rgb(1, 28, 109);
+    color: #f9f9f9;
+      font-size: 20px;
+    position: relative;
+    top: -22px;
+    position: relative;
+    left: 22px;
+
+}
+
+.s1 button:hover
+{
+    background-color:rgb(128, 159, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.s1 p
+{
+    color: black;
+    font-family: Ubuntu;
+    position: relative;
+    top: -10px;
+text-align: center;
+}
+
+.s1 p a
+{
+    color: blue;
+    text-decoration:none;
+
+}
+
+.s1 p a:hover
+{
+    text-decoration: none;
+    color: cadetblue;
+
+}
+
+#err
+{
+    display: none;
+    width: 140px;
+    height: 40px;
+    background-color:rgb(112, 0, 0);
+}

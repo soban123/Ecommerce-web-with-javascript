@@ -1,0 +1,266 @@
+<html>
+
+<head>
+       <title>
+           Home
+       </title> 
+<link rel="stylesheet" href="maazhome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|KoHo|Noto+Sans|Raleway" rel="stylesheet">
+
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDU8cHuyLW-Kzh89WCH6n1HJ_GZcv4XkRc",
+    authDomain: "project-5a06e.firebaseapp.com",
+    databaseURL: "https://project-5a06e.firebaseio.com",
+    projectId: "project-5a06e",
+    storageBucket: "project-5a06e.appspot.com",
+    messagingSenderId: "611640822754"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+
+<body>
+    <div class="nav1">
+
+        <ul>
+            <li><a href="sign.html">Register</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="active"><a href="#contc">TEAM</a></li>
+            
+            
+        </ul>
+    </div>
+
+    
+        <h1 class="header"> <span class="header1a">Hospital</span> System</h1>
+    
+
+
+
+
+
+
+        <h1 id="contc"> TEAM</h1>
+<div class="wrapper"><!--MAIN BOX-->
+
+	   
+
+
+	<div class="container" id="c1">
+                
+        <div class="image">
+			
+        </div><!--UPPER BOX-->
+        
+		<div class="story" id="s1">
+			<div class="info">
+				<h3>DOCTOR</h3>
+				<input type="email" id="mmail" name="username" placeholder="Email">
+        
+				<input type="password" id="mpass" name="password" placeholder="Password"><br/>
+				<br/>
+				<input class="lia" type="button" onclick="managervalid()" name="Log In" value="Log In">
+	
+			</div>
+        </div><!--LOWER BOX-->
+        
+    </div><!--MANAGER  BOX-->
+    
+    
+    
+    <div class="container" id="c2"><!--BOX ON THE RIGHT-->
+		<div class="image">
+			
+        </div><!--UPPER BOX-->
+        
+		<div class="story" id="s2">
+			<div class="info">
+			<h3>PATIENT</h3>
+			<input type="email" id="email" name="Email" placeholder="Email">
+        
+			<input type="password" id="epass" name="password" placeholder="Password"><br/>
+			<br/>
+			<input class="lia" type="button" onclick="patientvalid()" name="Log In" value="Log In">
+
+			</div>
+		</div><!--LOWER BOX-->
+	</div><!--PATIENT BOX-->
+
+  
+</div>
+
+<div class="d3">
+  <h1> WHAT WE VALUE MOST</h1>
+
+  <div class="img1"></div>
+    <br/>
+        <div class="head1">
+        <h1> TREATMENT</h1>
+        <p> WE can provide you<br>quality treatment </p>
+        </div><!--heading1-->
+        <div class="img2"></div>
+        <br>
+        <div class="head2">
+
+        
+    
+                <h1> PASSION</h1>
+                <p> Caring deeply about our mission, team, and customers</p>
+                </div><!--heading2-->
+            
+            
+                <div class="img3"></div>
+                <br>
+                
+                <div class="head3">
+    
+                    <h1> BEST CARE</h1>
+                    <p> You are investing your trust in the right place</p>
+                    </div><!--heading3-->
+        
+
+                    <div class="img4"></div>
+                <br>
+                
+                <div class="head4">
+    
+                    <h1> CHARITY</h1>
+                    <p> Remembering our social responsiblity as service for patients</p>
+                    </div><!--heading3-->
+
+
+</div>
+<h1 class="achievement">Achievement </h1>
+
+
+<div class="div4">
+    
+  <div class="stick">
+    <!-- <h1>
+    CARE
+    </h1> -->
+<p>
+    Many of us joined after already being members of the Plex community—a community very near and dear to our hearts.<br>
+    
+</p>
+  </div>
+  <div class="stick2">
+<!-- <h1>BEST TREATMENT</h1> -->
+
+<p>
+    Many of us joined after already being members of the Plex community—a community very near and dear to our hearts.<br>
+    
+</p>
+
+    </div>
+  
+
+  </div><!--swe-->
+  
+
+
+
+
+
+
+
+
+  <div class="aboutus">
+      <h6>ABOUT US</h6>
+    <div class="member2"> <p>
+        MUHAMMAD MAAZ<br>
+        
+    </p>
+
+</div>
+    <div class="member3">
+        <p>
+            UZAIR AFFENDI<br>
+           
+        </p> </div>
+    
+
+<!--ABOUT US DIV-->
+
+
+
+<footer>
+    <div class="foot">
+
+
+
+            <ul class="nav3">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a><span>FACEBOOK</span></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a><span>INSTAGRAM</span></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square"></i></a><span>TWITTER</span></li>
+            </ul>
+            
+            <div class="uh">
+            <a href="https://www.uit.edu/"><h2>USMAN INSTITUTE OF ENGINEERING<br>
+                University Road, Karachi - 75270, Pakistan<br>Telephone : +92 (213) 499 4305<br>
+                Fax : +92 (213) 497 6181<br>
+                Email : info@uit.edu</h2></a>
+            </div>
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+   
+    </body>
+
+    <script>
+    
+    function patientvalid()
+      {
+    
+    var pemail = document.getElementById("email").value;
+    var pass = document.getElementById("epass").value;
+
+ 
+    firebase.auth().signInWithEmailAndPassword(pemail,pass)
+    .then(function(success)
+    {
+        console.log("SUCCESFUL YO",success);
+        window.location.assign("employeeview.html");
+    })
+    .catch(function(error)
+    {
+        console.log("UNSUCCCESFUL BEYOTCH",error);
+        alert("Please enter correct password and mail");
+    })
+}
+
+
+function managervalid()
+{
+    var name=document.getElementById("mmail").value;
+    var pass=document.getElementById("mpass").value;
+
+    if(name !== "doctor" || pass !== "doctor")
+    {
+     
+        alert("enter coorrect password")   
+    }
+    else
+    {
+        window.location.href="ceo.html";
+    }
+    
+ }
+    
+    
+    
+    </script>
+
+</html>
