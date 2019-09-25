@@ -88,10 +88,10 @@ var q = 0 ;
 
 
               
-   var pb = {
+//    var pb = {
 
-  id : "10" ,
-  name: "soban" ,
-  email: "sbs@gmail.com",
-}
-console.log(  "sss" );
+//   id : "10" ,
+//   name: "soban" ,
+//   email: "sbs@gmail.com",
+// }
+// console.log(  "sss" );

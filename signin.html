@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
+    <!-- <link rel="stylesheet" href="./signup.css"> -->
+
+    <style>
+    *{ margin: 20px ;  }
+div > h1{	 font-weight: bold; font: outline;  background: rgb(0, 0, 0);}
+
+.hh{ border: solid 2px black; font-size: 25px;  background: #000; width: 450px; margin-left: 370px;  }
+.bu{   background: #000 ; color: white;   height: 30px;  border: 2px solid white; }
+
+    
+    
+    </style>
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,7 +43,7 @@
 <body>
     <div class="hh">
         <div>
-            <h1>  
+            <h1 style="color: white ;">  
                Sign In
             </h1>
         
@@ -42,20 +53,20 @@
         <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
+                    <label for="inputEmail4" style="color: white;">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Email">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
+                    <label for="inputPassword4" style="color: white;">Password</label>
                     <input type="password" class="form-control" id="password" placeholder="Password">
                   </div>
 
                 </div>
-                <button onclick="signin()" id="ok"  class="btn btn-primary" > <a  style="color: aliceblue"> Sign in </button>
-                <button onclick="signout()" class="btn btn-primary" > <a  style="color: aliceblue"> Forget password </button>
+                <button onclick="signin()" id="ok"  class="bu btn " > <a style="color: rgb(16, 144, 255)"  href="./ecommerce1.html"> Sign in </button>
+                <button onclick="signout()" class="bu btn " > <a  style="color: rgb(8, 134, 245)" href="./signup.html"> Forget password </button>
 
 
-       1     </form>
+          </form>
               </div>
 
 
@@ -70,47 +81,33 @@ function signin(){
             let password = document.getElementById("password").value ;
 
 
-              firebase.auth().CreateWithEmailAndPassword(email, password)
-              .then(  )
+              // firebase.auth().CreateWithEmailAndPassword(email, password)
+              // .then(  )
                     
                      
-             
-             
-             
-                    } 
-                        
-
-                        var provider = new firebase.auth.GoogleAuthProvider();
-                    firebase.auth().signInWithPopup(provider);
-
-//                     var provider = new firebase.auth.FacebookAuthProvider()
-
-//                     firebase.auth().signInWithRedirect(provider).then(function(result) {
-//   // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-//   var token = result.credential.accessToken;
-//   // The signed-in user info.
-//   var user = result.user;
-//   // ...
-// }).catch(function(error) {
-//   // Handle Errors here.
-//   var errorCode = error.code;
-//   var errorMessage = error.message;
-//   // The email of the user's account used.
-//   var email = error.email;
-//   // The firebase.auth.AuthCredential type that was used.
-//   var credential = error.credential;
-//   // ...
-// });
-
-
-function signout(){
-firebase.auth().signOut().then(function() {
-  // Sign-out successful.
-}).catch(function(error) {
-  // An error happened.
+              firebase.auth().createUserWithEmailAndPassword(email, password)
+              
+              
+              .catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
 });
 
+// firebase.auth().signInWithEmailAndPassword(email, password)
+
 }
+
+             
+             
+                    
+                        
+
+                       
+
+
+
 
 
               </script>

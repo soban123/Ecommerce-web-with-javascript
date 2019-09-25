@@ -9,23 +9,23 @@
               <script src="./checkout.js"> </script>
     <style> 
     .div1:hover{ background: rgb(48, 47, 43);   }
-    .block{ display: block; background: #000; width: 200px ; color: chartreuse; shape-margin: 20px; }
+    .block{ display: block; background: #000; width: 200px ; color: rgb(110, 1, 61); shape-margin: 20px; }
     .hidden{ display: none;   }
     .cor{  width: 250px ;  height: 290px;  }
-    .box{ display: flex ; flex-wrap: wrap; margin: 2px ; background-image: linear-gradient(to right , white , rgb(255, 149, 10) ); }
+    .box{ display: flex ; height: 600px; flex-wrap: wrap; margin: 2px ;background: rgb(47, 3, 73); }
     .box > div {  margin : 30px; padding: 20px; border: solid rgb(5, 5, 5) 2px; background: #000 ; color: wheat; }
-    button{ margin: 5px; color: blanchedalmond;  background-image: linear-gradient( to right , rgb(255, 145, 2) , rgb(36, 30, 30) ); border-radius: 10px;  }
+    button{ margin: 5px; color: rgb(255, 255, 255); height: 50px;  background-image: linear-gradient( to right , rgb(211, 65, 255) , rgb(3, 3, 3) ); border-radius: 10px;  }
     </style>
 </head>
 <body>
     
 <div>
 
-    <h1 align="center"   style="font-family: 'Righteous', cursive;  background: #000; color: rgb(255, 81, 13); "  >     WELCOME TO SMARTPHONE WORLD   </h1>
+    <h1 align="center"   style="font-family: 'Righteous', cursive;  background: #000; color: rgb(161, 20, 255); "  >     WELCOME TO SMARTPHONE WORLD   </h1>
 
     
 
-<div style="margin-left:1400px; border: 2px solid rebeccapurple; " class="cor" >  <p id="cart" style="color: tomato; border:black 2px solid ; border-radius: 50px  ;  font-family:'Times New Roman', Times, serif; font-size: 30px" align="center"> items  </p>  <img src="./pics/eco.png" alt="" width="120px" height="100px" >   <button style="height:50px; "  onclick="checkout()" > Check out  </button >  <h1>Cart  </h1>  </div>
+<div style="margin-left:1400px; border: 2px solid rebeccapurple; " class="cor" >  <p id="cart" style="color: rgb(100, 0, 158); border:black 2px solid ; border-radius: 50px  ;  font-family:'Times New Roman', Times, serif; font-size: 30px" align="center"> items  </p>  <img src="./pics/eco.png" alt="" width="120px" height="100px" >   <button style="height:50px; "  onclick="checkout()" > Check out  </button >  <h1>Cart  </h1>  </div>
     <div class="box" style=" width: 100% ; border: black solid 2px"   >  
     
  <div class="div1" onmouseover="show()" ; onmouseout="hide()" ; > <img src="./pics/htc.jpg" id="phone"  width="200px" height="255px" alt="phone"> <h4>Htc h1</h4> <div id= "ok" class="hidden" style="font-size: 40px ; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> price is 390$ </div>   <button class="bu" onclick="addtocart( 'htc1' , 390 )">Add to cart</button>   </div>
